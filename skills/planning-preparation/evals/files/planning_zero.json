@@ -1,0 +1,14 @@
+{
+  "team": "Squad Checkout",
+  "sprint_name": "S46",
+  "people": 5,
+  "sprint_days": 10,
+  "absences_person_days": 0,
+  "focus_factor": 0.7,
+  "prior_velocities": [
+    21,
+    18,
+    25
+  ],
+  "ready_stories": []
+}

@@ -1,0 +1,41 @@
+{
+  "board": "NAC",
+  "delivery_model": "kanban",
+  "require_estimate": false,
+  "team_estimate_ceiling": null,
+  "epic_required": false,
+  "require_dependencies_identified": true,
+  "require_testable": true,
+  "issues": [
+    {
+      "key": "C-1",
+      "title": "With deps and testable",
+      "has_description": true,
+      "has_acceptance_criteria": true,
+      "points": null,
+      "has_epic": false,
+      "has_dependencies_identified": true,
+      "is_testable": true
+    },
+    {
+      "key": "C-2",
+      "title": "No deps identified",
+      "has_description": true,
+      "has_acceptance_criteria": true,
+      "points": null,
+      "has_epic": true,
+      "has_dependencies_identified": false,
+      "is_testable": true
+    },
+    {
+      "key": "C-3",
+      "title": "Not testable",
+      "has_description": true,
+      "has_acceptance_criteria": true,
+      "points": null,
+      "has_epic": true,
+      "has_dependencies_identified": true,
+      "is_testable": false
+    }
+  ]
+}

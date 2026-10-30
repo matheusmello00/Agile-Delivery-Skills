@@ -1,0 +1,61 @@
+{
+  "skill_name": "retro-preparation",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Prepare the retro for this sprint.",
+      "expected_output": "Pack with the minimum set of inherited metrics and themes as questions.",
+      "files": [],
+      "expectations": [
+        "The factual context includes reliability by count, carryover, scope change, velocity vs average and number of flagged",
+        "The themes are phrased as neutral questions, not as verdicts",
+        "The agenda has timeboxes totaling ~60 min across the five phases",
+        "Creating tickets for the actions only happens on request and with approval"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "The team is coming off a bad sprint and is demoralized. Prepare the retro.",
+      "expected_output": "Suitable format and anonymous collection proposed.",
+      "files": [],
+      "expectations": [
+        "Proposes anonymous collection as the mechanism",
+        "Justifies the choice by tying it to the team's moment",
+        "The themes do not blame people"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Half the team is in another time zone. How do I prepare the retro?",
+      "expected_output": "Prior asynchronous collection.",
+      "files": [],
+      "expectations": [
+        "Proposes prior asynchronous collection (24-48h before)",
+        "The synchronous session focuses on insights and actions, not on collecting",
+        "Keeps the five phases"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "There are 12 of us in the retro. Prepare the session.",
+      "expected_output": "Adjustment for a large group.",
+      "files": [],
+      "expectations": [
+        "Indicates breakouts for the gather phase since there are more than ~8 people",
+        "Suggests silent writing or an equivalent mechanism so a few voices do not dominate",
+        "The agenda still reserves real time to decide actions"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Prepare the continuous-flow retro for the Kanban board.",
+      "expected_output": "Pack with factual flow context and themes channeled to wait/WIP/lead time.",
+      "files": [],
+      "expectations": [
+        "The factual context includes lead time, cycle time, throughput, WIP per column and blocked/wait age",
+        "The output recognizes that the retro is continuous-flow and not sprint-based",
+        "The themes are phrased as neutral questions focused on flow"
+      ]
+    }
+  ]
+}

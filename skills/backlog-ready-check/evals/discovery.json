@@ -1,0 +1,159 @@
+{
+  "skill_name": "backlog-ready-check",
+  "queries": [
+    {
+      "id": 1,
+      "query": "are these stories ready?",
+      "should_trigger": true,
+      "expected_skill": "backlog-ready-check",
+      "note": "activation"
+    },
+    {
+      "id": 2,
+      "query": "prepare the refinement",
+      "should_trigger": true,
+      "expected_skill": "backlog-ready-check",
+      "note": "activation"
+    },
+    {
+      "id": 3,
+      "query": "what should we refine first?",
+      "should_trigger": true,
+      "expected_skill": "backlog-ready-check",
+      "note": "activation"
+    },
+    {
+      "id": 4,
+      "query": "which stories have no acceptance criteria?",
+      "should_trigger": true,
+      "expected_skill": "backlog-ready-check",
+      "note": "activation"
+    },
+    {
+      "id": 5,
+      "query": "run a DoR scan on the top of the backlog",
+      "should_trigger": true,
+      "expected_skill": "backlog-ready-check",
+      "note": "activation"
+    },
+    {
+      "id": 6,
+      "query": "backlog readiness for the NAC board",
+      "should_trigger": true,
+      "expected_skill": "backlog-ready-check",
+      "note": "activation"
+    },
+    {
+      "id": 7,
+      "query": "which stories are unestimated?",
+      "should_trigger": true,
+      "expected_skill": "backlog-ready-check",
+      "note": "activation"
+    },
+    {
+      "id": 8,
+      "query": "are there stories too big for a sprint?",
+      "should_trigger": true,
+      "expected_skill": "backlog-ready-check",
+      "note": "activation"
+    },
+    {
+      "id": 9,
+      "query": "backlog hygiene",
+      "should_trigger": true,
+      "expected_skill": "backlog-ready-check",
+      "note": "activation"
+    },
+    {
+      "id": 10,
+      "query": "do these stories meet the Definition of Ready?",
+      "should_trigger": true,
+      "expected_skill": "backlog-ready-check",
+      "note": "activation"
+    },
+    {
+      "id": 11,
+      "query": "which stories need a split?",
+      "should_trigger": true,
+      "expected_skill": "backlog-ready-check",
+      "note": "activation"
+    },
+    {
+      "id": 12,
+      "query": "is the top of the backlog ready for planning?",
+      "should_trigger": true,
+      "expected_skill": "backlog-ready-check",
+      "note": "activation"
+    },
+    {
+      "id": 21,
+      "query": "is the top of the kanban flow ready for pull?",
+      "should_trigger": true,
+      "expected_skill": "backlog-ready-check",
+      "note": "kanban activation"
+    },
+    {
+      "id": 22,
+      "query": "which items in the intake queue are ready without an estimate?",
+      "should_trigger": true,
+      "expected_skill": "backlog-ready-check",
+      "note": "kanban without estimate"
+    },
+    {
+      "id": 13,
+      "query": "how much fits in the next sprint?",
+      "should_trigger": false,
+      "expected_skill": "planning-preparation",
+      "note": "collision with neighbouring skill"
+    },
+    {
+      "id": 14,
+      "query": "propose the scope and the sprint goal",
+      "should_trigger": false,
+      "expected_skill": "planning-preparation",
+      "note": "collision with neighbouring skill"
+    },
+    {
+      "id": 15,
+      "query": "how did the sprint go?",
+      "should_trigger": false,
+      "expected_skill": "retro-preparation",
+      "note": "collision with neighbouring skill"
+    },
+    {
+      "id": 16,
+      "query": "prepare the retrospective",
+      "should_trigger": false,
+      "expected_skill": "retro-preparation",
+      "note": "collision with neighbouring skill"
+    },
+    {
+      "id": 17,
+      "query": "what is blocked?",
+      "should_trigger": false,
+      "expected_skill": "blocker-aging",
+      "note": "collision with neighbouring skill"
+    },
+    {
+      "id": 18,
+      "query": "write the acceptance criteria for this story",
+      "should_trigger": false,
+      "expected_skill": null,
+      "note": "out of scope"
+    },
+    {
+      "id": 19,
+      "query": "create an epic in Jira",
+      "should_trigger": false,
+      "expected_skill": null,
+      "note": "out of scope"
+    },
+    {
+      "id": 20,
+      "query": "review this pull request",
+      "should_trigger": false,
+      "expected_skill": "review-pr",
+      "note": "collision with neighbouring skill"
+    }
+  ]
+}

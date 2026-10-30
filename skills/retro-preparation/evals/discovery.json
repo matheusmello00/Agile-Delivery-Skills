@@ -1,0 +1,152 @@
+{
+  "skill_name": "retro-preparation",
+  "queries": [
+    {
+      "id": 1,
+      "query": "prepare the retrospective",
+      "should_trigger": true,
+      "expected_skill": "retro-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 2,
+      "query": "what should we discuss in the retro?",
+      "should_trigger": true,
+      "expected_skill": "retro-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 3,
+      "query": "which retro format should I use?",
+      "should_trigger": true,
+      "expected_skill": "retro-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 4,
+      "query": "the team is demoralized, how do I run the retro?",
+      "should_trigger": true,
+      "expected_skill": "retro-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 5,
+      "query": "retro prep for sprint 42",
+      "should_trigger": true,
+      "expected_skill": "retro-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 6,
+      "query": "give me data to open the retro",
+      "should_trigger": true,
+      "expected_skill": "retro-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 7,
+      "query": "themes for this sprint's retrospective",
+      "should_trigger": true,
+      "expected_skill": "retro-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 8,
+      "query": "the team is new, what retro should we do?",
+      "should_trigger": true,
+      "expected_skill": "retro-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 9,
+      "query": "we have partners in another time zone, how do we collect input for the retro?",
+      "should_trigger": true,
+      "expected_skill": "retro-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 10,
+      "query": "agenda for a 60-minute retro",
+      "should_trigger": true,
+      "expected_skill": "retro-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 11,
+      "query": "opening questions for the retro",
+      "should_trigger": true,
+      "expected_skill": "retro-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 12,
+      "query": "facilitate tomorrow's retrospective",
+      "should_trigger": true,
+      "expected_skill": "retro-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 13,
+      "query": "prepare a Kanban flow retro",
+      "should_trigger": true,
+      "expected_skill": "retro-preparation",
+      "note": "kanban activation"
+    },
+    {
+      "id": 14,
+      "query": "which flow health signals should we use for this retro?",
+      "should_trigger": true,
+      "expected_skill": "retro-preparation",
+      "note": "kanban activation"
+    },
+    {
+      "id": 15,
+      "query": "calculate the velocity and carryover",
+      "should_trigger": false,
+      "expected_skill": "planning-preparation",
+      "note": "collision with neighboring skill"
+    },
+    {
+      "id": 16,
+      "query": "how did the sprint go?",
+      "should_trigger": false,
+      "expected_skill": "retro-preparation",
+      "note": "collision with neighboring skill"
+    },
+    {
+      "id": 17,
+      "query": "how much fits in the next sprint?",
+      "should_trigger": false,
+      "expected_skill": "planning-preparation",
+      "note": "collision with neighboring skill"
+    },
+    {
+      "id": 18,
+      "query": "are these stories ready?",
+      "should_trigger": false,
+      "expected_skill": "backlog-ready-check",
+      "note": "collision with neighboring skill"
+    },
+    {
+      "id": 19,
+      "query": "what is blocked?",
+      "should_trigger": false,
+      "expected_skill": "blocker-aging",
+      "note": "collision with neighboring skill"
+    },
+    {
+      "id": 20,
+      "query": "publish this to Confluence",
+      "should_trigger": false,
+      "expected_skill": null,
+      "note": "out of scope"
+    },
+    {
+      "id": 21,
+      "query": "translate this document to English",
+      "should_trigger": false,
+      "expected_skill": null,
+      "note": "out of scope"
+    }
+  ]
+}

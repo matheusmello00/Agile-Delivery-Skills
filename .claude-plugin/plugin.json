@@ -1,0 +1,6 @@
+{
+  "name": "agile-delivery",
+  "version": "0.1.0",
+  "description": "Five agile delivery skills: backlog readiness, blocker aging, planning, retro and review/demo preparation. Works with Jira, Azure DevOps and ClickUp.",
+  "author": { "name": "Matheus Mello" }
+}

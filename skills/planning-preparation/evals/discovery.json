@@ -1,0 +1,138 @@
+{
+  "skill_name": "planning-preparation",
+  "queries": [
+    {
+      "id": 1,
+      "query": "prepare tomorrow's sprint planning",
+      "should_trigger": true,
+      "expected_skill": "planning-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 2,
+      "query": "how much fits in the next sprint?",
+      "should_trigger": true,
+      "expected_skill": "planning-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 3,
+      "query": "propose a scope for S43",
+      "should_trigger": true,
+      "expected_skill": "planning-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 4,
+      "query": "we have 2 people on vacation, how much can we commit to?",
+      "should_trigger": true,
+      "expected_skill": "planning-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 5,
+      "query": "capacity vs velocity for the next sprint",
+      "should_trigger": true,
+      "expected_skill": "planning-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 6,
+      "query": "draft a sprint goal from the top of the backlog",
+      "should_trigger": true,
+      "expected_skill": "planning-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 7,
+      "query": "how many points should we accept in planning?",
+      "should_trigger": true,
+      "expected_skill": "planning-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 8,
+      "query": "planning prep for the Checkout team",
+      "should_trigger": true,
+      "expected_skill": "planning-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 9,
+      "query": "with a focus factor of 0.6, how much is reasonable to commit?",
+      "should_trigger": true,
+      "expected_skill": "planning-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 10,
+      "query": "which stories should we bring to planning?",
+      "should_trigger": true,
+      "expected_skill": "planning-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 11,
+      "query": "the team lost a person, adjust the forecast",
+      "should_trigger": true,
+      "expected_skill": "planning-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 12,
+      "query": "how much did we deliver on average and how much can we promise?",
+      "should_trigger": true,
+      "expected_skill": "planning-preparation",
+      "note": "activation"
+    },
+    {
+      "id": 13,
+      "query": "how did the last sprint go?",
+      "should_trigger": false,
+      "expected_skill": "retro-preparation",
+      "note": "collision with neighbouring skill"
+    },
+    {
+      "id": 14,
+      "query": "what was the velocity and carryover of the last sprint?",
+      "should_trigger": false,
+      "expected_skill": "retro-preparation",
+      "note": "collision with neighbouring skill"
+    },
+    {
+      "id": 15,
+      "query": "do these stories have acceptance criteria?",
+      "should_trigger": false,
+      "expected_skill": "backlog-ready-check",
+      "note": "collision with neighbouring skill"
+    },
+    {
+      "id": 16,
+      "query": "what is left to refine in the backlog?",
+      "should_trigger": false,
+      "expected_skill": "backlog-ready-check",
+      "note": "collision with neighbouring skill"
+    },
+    {
+      "id": 17,
+      "query": "prepare the retro",
+      "should_trigger": false,
+      "expected_skill": "retro-preparation",
+      "note": "collision with neighbouring skill"
+    },
+    {
+      "id": 18,
+      "query": "are there impediments to escalate?",
+      "should_trigger": false,
+      "expected_skill": "blocker-aging",
+      "note": "collision with neighbouring skill"
+    },
+    {
+      "id": 19,
+      "query": "deploy to production",
+      "should_trigger": false,
+      "expected_skill": null,
+      "note": "out of scope"
+    }
+  ]
+}

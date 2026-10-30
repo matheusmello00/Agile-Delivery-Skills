@@ -1,0 +1,339 @@
+{
+  "skill_name": "review-demo-preparation",
+  "evals": [
+    {
+      "id": 1,
+      "scenario": "review-scrum-interna",
+      "audience": "team + product manager",
+      "prompt": "Prepare a sprint review for the team and the Product Manager based on the issues completed in the last sprint. I want a value-oriented narrative and a presenter recommendation.",
+      "expected_output": "Includes factual context, main message, value blocks, deliveries table and an indication of who presents each block.",
+      "expectations": [
+        "Clearly identifies the interval and the analysis mode (Scrum)",
+        "Groups deliveries by perceived value and not just as a list of issues",
+        "Suggests presenters based on the assignees and their real contribution",
+        "Focuses on the impact for the business, the user or the operation",
+        "Excludes non-deliverable items, such as Test, Test Set or Pre-Condition"
+      ]
+    },
+    {
+      "id": 2,
+      "scenario": "demo-kanban-stakeholders",
+      "audience": "stakeholders",
+      "prompt": "Create a product demo for stakeholders based on what was delivered this week and indicate what needs alignment to decide the next step.",
+      "expected_output": "Presents a short, impact-oriented narrative with a well-defined script and next steps.",
+      "expectations": [
+        "Resolves the mode as Kanban or time window and asks for clarification if necessary",
+        "Uses a simple structure of context, delivery, impact and decision",
+        "Avoids technical excess with no link to value",
+        "Clearly flags who can present each block",
+        "If data is missing, states the absence of evidence instead of inferring impact"
+      ]
+    },
+    {
+      "id": 3,
+      "scenario": "product-review-executiva",
+      "audience": "business",
+      "prompt": "I want a product review with a business audience. Gather only what was completed and deliver a main message, risks and the ideal session format.",
+      "expected_output": "Provides an executive briefing focused on decision and perceived value.",
+      "expectations": [
+        "Keeps factual and professional language",
+        "Does not invent business impact without evidence",
+        "Includes dependencies, risks and follow-up questions",
+        "Suggests the appropriate format based on the audience and the session context"
+      ]
+    },
+    {
+      "id": 4,
+      "scenario": "ambiguous-context",
+      "audience": "team",
+      "prompt": "I want today's demo; prepare the briefing based on what was delivered. Don't tell me whether it is Scrum or Kanban; just do the summary.",
+      "expected_output": "Asks for clarification about the analysis context before continuing, because the request is ambiguous between sprint and time window.",
+      "expectations": [
+        "Recognizes the ambiguity between Sprint and Kanban",
+        "Asks the user to confirm the analysis type before proceeding",
+        "Does not automatically assume it is Scrum or Kanban",
+        "Keeps the answer short, focused on clarification and without inventing data"
+      ]
+    },
+    {
+      "id": 5,
+      "scenario": "review-scrum-equipa",
+      "audience": "team + product manager",
+      "prompt": "Prepare the sprint review of the Checkout team for the Product Manager and the team. I want the summary to highlight perceived value, dependencies and who explains each block.",
+      "expected_output": "Delivers a briefing with factual context, main message, value blocks, presentation by impact and owners per theme.",
+      "expectations": [
+        "Recognizes that this is a Scrum/sprint context",
+        "Groups deliveries by value and not just by ticket",
+        "Identifies main owners and proposes presenters",
+        "Includes relevant dependencies or risks",
+        "Focuses on the value for the business, the user or the operation"
+      ]
+    },
+    {
+      "id": 6,
+      "scenario": "demo-stakeholders-impacto",
+      "audience": "stakeholders",
+      "prompt": "I want a product demo for the interested parties, focused on impact, ordering by relevance and recommendations on who presents each theme.",
+      "expected_output": "Creates a short, executive narrative with presentation order, value and session briefing.",
+      "expectations": [
+        "Resolves the Kanban/time window mode when the question mentions interested parties and a period",
+        "Orders the presentation by impact and not by Jira chronology",
+        "Presents a clear main message",
+        "Suggests the role of each presenter",
+        "Keeps factual language that is useful for the audience"
+      ]
+    },
+    {
+      "id": 7,
+      "scenario": "review-scrum-direcao",
+      "audience": "leadership",
+      "prompt": "Prepare the sprint review for leadership. I want only what was completed, the main message and the points of attention before the meeting takes place.",
+      "expected_output": "Summarizes the deliverables, the perceived value and the risks or decisions that deserve attention.",
+      "expectations": [
+        "Includes factual context and the review period",
+        "Considers only completed and deliverable items",
+        "Does not invent business metrics without evidence",
+        "Includes risks, dependencies and follow-up",
+        "Keeps the language oriented to the executive decision"
+      ]
+    },
+    {
+      "id": 8,
+      "scenario": "demo-kanban-interna",
+      "audience": "team",
+      "prompt": "I want an internal team demo to align on what was delivered in the last week. I'm not interested in a very long technical report, but a value narrative with an indication of who shows what.",
+      "expected_output": "Presents a short, practical view with a briefing, value blocks and presentation per subject.",
+      "expectations": [
+        "Identifies the time window and the Kanban context",
+        "Groups deliveries by value theme",
+        "Reduces technical detail when it adds no value to the session",
+        "Defines who presents each block",
+        "Keeps the focus on what changed and why it matters"
+      ]
+    },
+    {
+      "id": 9,
+      "scenario": "product-review-multifuncional",
+      "audience": "cross-functional audience",
+      "prompt": "Do a product review with a cross-functional audience. I'd like to prioritize the completed deliveries, explain the perceived impact and indicate who should speak about each part.",
+      "expected_output": "Creates a briefing with goals, value blocks, risks and a logical presentation order for the meeting.",
+      "expectations": [
+        "Uses a clear structure of context, value and decision",
+        "Distinguishes between team, stakeholders and cross-functional audience",
+        "Suggests who presents based on experience and real responsibility",
+        "Includes dependencies and follow-up questions",
+        "Avoids impact inferences that have no support"
+      ]
+    },
+    {
+      "id": 10,
+      "scenario": "demo-cliente-interno",
+      "audience": "internal customer",
+      "prompt": "Prepare next week's demo for the internal customer. I want a view of the impact, a simple narrative and a team recommendation for the main blocks.",
+      "expected_output": "Produces a briefing focused on the value for the internal customer, what changed and who presents each part.",
+      "expectations": [
+        "Resolves the audience target and adapts the level of detail",
+        "Keeps the session oriented to value and decision",
+        "Suggests presenters appropriately for the context",
+        "Clearly distinguishes between delivery and message exaggeration",
+        "Does not include test or management items as a main delivery"
+      ]
+    },
+    {
+      "id": 11,
+      "scenario": "review-scrum-entregas-pequenas",
+      "audience": "leadership",
+      "prompt": "I want a sprint review with several small deliveries. Group them by benefit for users and business and make a presentation script focused on what leadership needs to know.",
+      "expected_output": "Offers a summary organized by themes, with perceived value and presentation sequence for the meeting.",
+      "expectations": [
+        "Groups deliveries by theme instead of listing them individually",
+        "Keeps the focus on the value for the user and for the business",
+        "Suggests presentation order by relevance",
+        "Includes risks and next steps",
+        "Does not mix tests and management with value delivery"
+      ]
+    },
+    {
+      "id": 12,
+      "scenario": "demo-kanban-negocio",
+      "audience": "business",
+      "prompt": "Can you prepare the product demo based on the issues completed this fortnight? I want a strong main message, deadlines and a presenter recommendation for each block.",
+      "expected_output": "Produces an objective version for a business meeting, focused on impact and presentation by blocks.",
+      "expectations": [
+        "Identifies the analysis as a time window or Kanban",
+        "Uses a short, executive structure",
+        "Includes a value summary and session goals",
+        "Suggests who presents based on real responsibility",
+        "Avoids claims without factual support"
+      ]
+    },
+    {
+      "id": 13,
+      "scenario": "review-scrum-po",
+      "audience": "PO + team",
+      "prompt": "I want the sprint review preparation for the team and the PO. Gather the completed deliveries, identify the value and tell me how to organize the presentation.",
+      "expected_output": "Generates a session-oriented briefing with narrative, value blocks, deliveries and responsibilities.",
+      "expectations": [
+        "Recognizes the Scrum context",
+        "Relates each delivery to perceived value",
+        "Defines who should present each block",
+        "Includes a suggested script for the meeting",
+        "Keeps the language clear and without exaggeration"
+      ]
+    },
+    {
+      "id": 14,
+      "scenario": "demo-negocio-tecnico",
+      "audience": "business",
+      "prompt": "Do a product demo for a business audience with little technical context. I want to show what changed, why it matters and what needs alignment.",
+      "expected_output": "Creates an executive briefing focused on the business impact, not on technical detail.",
+      "expectations": [
+        "Adapts the level of detail to the audience",
+        "Reduces the weight of technical details when they are not relevant",
+        "Focuses on the business or user impact",
+        "Includes what needs alignment or decision",
+        "Avoids inventing results that do not exist"
+      ]
+    },
+    {
+      "id": 15,
+      "scenario": "review-scrum-tecnico",
+      "audience": "technical team",
+      "prompt": "Prepare the sprint review for the engineering team and the Scrum Master. I want a clear summary of the delivery and who best explains each part.",
+      "expected_output": "Delivers a technical, structured briefing with value themes, presenters and session script.",
+      "expectations": [
+        "Respects the Scrum context and the sprint window",
+        "Uses a structure sufficient for the technical team",
+        "Assigns the presentation realistically to the developers",
+        "Includes risks, dependencies and follow-up",
+        "Does not mix support work with business value"
+      ]
+    },
+    {
+      "id": 16,
+      "scenario": "product-review-janela-temporal",
+      "audience": "product + business",
+      "prompt": "I want the preparation of a product review from deliveries completed in the last 30 days. Organize the deliveries by impact and help me decide what to show first.",
+      "expected_output": "Presents a briefing with temporal context, value blocks, presentation order and script recommendation.",
+      "expectations": [
+        "Identifies the analysis as a time window or Kanban",
+        "Orders the presentation by impact",
+        "Suggests a main theme and value narrative",
+        "Includes owners for each block",
+        "Does not assume results without evidence"
+      ]
+    },
+    {
+      "id": 17,
+      "scenario": "demo-lideranca-tempo-limitado",
+      "audience": "leadership",
+      "prompt": "I want a demo for leadership with limited time. Read through the completed deliveries and recommend only the blocks worth showing.",
+      "expected_output": "Delivers a short, prioritized, decision-oriented version, focused on the most relevant themes.",
+      "expectations": [
+        "Prioritizes by value relevance and not by the number of deliveries",
+        "Pays attention to the meeting's available time",
+        "Includes only eligible and completed deliveries",
+        "Suggests order and main presenter",
+        "Keeps executive language"
+      ]
+    },
+    {
+      "id": 18,
+      "scenario": "review-scrum-cliente-interno",
+      "audience": "internal customer",
+      "prompt": "Prepare a sprint review for the team and the internal customer, with a summary of what changed, why it matters and how to present without losing the focus on value.",
+      "expected_output": "Provides a session briefing with main message, value blocks and an indication of who presents each theme.",
+      "expectations": [
+        "Recognizes the Scrum context and the need to narrate the value",
+        "Includes enough factual context for the meeting",
+        "Assigns presenters based on real contribution",
+        "Focuses on the value for the internal customer and for the team",
+        "Does not include items that do not represent a delivery"
+      ]
+    },
+    {
+      "id": 19,
+      "scenario": "demo-stakeholders-pmo",
+      "audience": "stakeholders + PMO",
+      "prompt": "I want a product demo for an alignment meeting with stakeholders and PMO. Make a clear summary of what was delivered, why this matters and what the risks and pending decisions are.",
+      "expected_output": "Creates an executive briefing, clear and ready for decision, focused on impact and risks.",
+      "expectations": [
+        "Uses a structure suited to a decision-making audience",
+        "Includes risks, dependencies and pending decisions",
+        "Focuses on the perceived value and the impact for the organization",
+        "Suggests presenters relevant to the theme",
+        "Keeps the text factual and not dependent on inferences"
+      ]
+    },
+    {
+      "id": 20,
+      "scenario": "review-scrum-evidencia",
+      "audience": "product team",
+      "prompt": "I want you to prepare a sprint review for the product team, without inventing metrics or impacts. Use only what is supported by the completed issues and show the best presentation order.",
+      "expected_output": "Produces a prudent, focused and factual briefing, with narrative, order and owners.",
+      "expectations": [
+        "Recognizes that it must work only with evidence",
+        "Does not invent financial impact, ROI or adoption",
+        "Clearly explains the order by relevance",
+        "Includes risks and dependencies, if any",
+        "Uses safe and objective language"
+      ]
+    },
+    {
+      "id": 21,
+      "scenario": "product-review-ciclos",
+      "audience": "product + business",
+      "prompt": "Do a product review from the work completed in the last two cycles. I want the main message, value blocks, deliveries to present and presenter suggestions.",
+      "expected_output": "Generates a structured briefing, focused on perceived value and presentation by block.",
+      "expectations": [
+        "Resolves whether the context is Scrum or time window before synthesizing",
+        "Groups deliveries by value and not by isolated area",
+        "Suggests presenters based on real responsibility",
+        "Includes risks and dependency control",
+        "Emphasizes what the audience needs to decide or align on"
+      ]
+    },
+    {
+      "id": 22,
+      "scenario": "demo-negocio-lideres",
+      "audience": "business leaders",
+      "prompt": "I want an internal delivery demo for the team and the business leaders. Make a summary of the completed deliveries, how to communicate them and who can lead each theme.",
+      "expected_output": "Creates a presentation briefing with clear structure, prioritization and distribution of owners.",
+      "expectations": [
+        "Adapts the level of detail to the audience",
+        "Excludes test or management items as a main delivery",
+        "Groups by value and by perceived impact",
+        "Includes presentation by theme and assignment of owners",
+        "Pays attention to the business context and the decision"
+      ]
+    },
+    {
+      "id": 23,
+      "scenario": "review-scrum-tech-lead",
+      "audience": "tech lead + team",
+      "prompt": "Prepare a sprint review for the team and the tech lead. I want a view of what was delivered and a recommendation on which part should be explained by whom.",
+      "expected_output": "Delivers a technical and practical briefing with value themes, risks and presentation owners.",
+      "expectations": [
+        "Recognizes the session as Scrum/sprint",
+        "Distinguishes between delivery and technical risk",
+        "Assigns the implementation explanation to the appropriate owner",
+        "Includes dependencies and the necessary decision",
+        "Keeps the language oriented to facts and clarity"
+      ]
+    },
+    {
+      "id": 24,
+      "scenario": "demo-kanban-equipa-negocio",
+      "audience": "team + stakeholders",
+      "prompt": "I want the preparation of a product demo for stakeholders and for the team. Summarize the completed deliveries, the main message and who speaks in each part without creating excess technical detail.",
+      "expected_output": "Generates an executive briefing with a short narrative, focus on value and presenters defined by theme.",
+      "expectations": [
+        "Identifies the Kanban/time window context",
+        "Adapts the content to the audience",
+        "Keeps the explanation of value and impact first",
+        "Suggests presenters realistically",
+        "Avoids impact inferences without evidence"
+      ]
+    }
+  ]
+}

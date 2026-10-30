@@ -1,0 +1,38 @@
+{
+  "board": "Test",
+  "team_estimate_ceiling": 8,
+  "issues": [
+    {
+      "key": "A-1",
+      "title": "Ready",
+      "has_description": true,
+      "has_acceptance_criteria": true,
+      "points": 5,
+      "has_epic": true
+    },
+    {
+      "key": "A-2",
+      "title": "Large and no AC",
+      "has_description": true,
+      "has_acceptance_criteria": false,
+      "points": 13,
+      "has_epic": true
+    },
+    {
+      "key": "A-3",
+      "title": "No epic but complete",
+      "has_description": true,
+      "has_acceptance_criteria": true,
+      "points": 3,
+      "has_epic": false
+    },
+    {
+      "key": "A-4",
+      "title": "Large and complete",
+      "has_description": true,
+      "has_acceptance_criteria": true,
+      "points": 21,
+      "has_epic": true
+    }
+  ]
+}

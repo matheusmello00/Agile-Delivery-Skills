@@ -1,0 +1,11 @@
+{
+  "name": "agile-delivery",
+  "owner": { "name": "Matheus Mello" },
+  "plugins": [
+    {
+      "name": "agile-delivery",
+      "source": "./",
+      "description": "Five agile delivery skills: backlog readiness, blocker aging, planning, retro and review/demo preparation."
+    }
+  ]
+}

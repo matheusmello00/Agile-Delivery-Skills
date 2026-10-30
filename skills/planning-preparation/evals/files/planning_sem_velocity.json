@@ -1,0 +1,25 @@
+{
+  "team": "New team",
+  "sprint_name": "S1",
+  "people": 4,
+  "sprint_days": 10,
+  "absences_person_days": 2,
+  "focus_factor": 0.7,
+  "ready_stories": [
+    {
+      "key": "N-1",
+      "title": "First story",
+      "points": 5
+    },
+    {
+      "key": "N-2",
+      "title": "Second",
+      "points": 3
+    },
+    {
+      "key": "N-3",
+      "title": "Unestimated",
+      "points": null
+    }
+  ]
+}

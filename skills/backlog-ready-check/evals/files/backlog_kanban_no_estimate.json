@@ -1,0 +1,39 @@
+{
+  "board": "Delivery Flow",
+  "delivery_model": "kanban",
+  "require_estimate": false,
+  "size_ceiling": "L",
+  "epic_required": false,
+  "issues": [
+    {
+      "key": "K-1",
+      "title": "Ready without size",
+      "has_description": true,
+      "has_acceptance_criteria": true,
+      "has_epic": false
+    },
+    {
+      "key": "K-2",
+      "title": "No AC",
+      "has_description": true,
+      "has_acceptance_criteria": false,
+      "has_epic": false
+    },
+    {
+      "key": "K-3",
+      "title": "Large with size XL",
+      "has_description": true,
+      "has_acceptance_criteria": true,
+      "tshirt_size": "XL",
+      "has_epic": false
+    },
+    {
+      "key": "K-4",
+      "title": "With size M",
+      "has_description": true,
+      "has_acceptance_criteria": true,
+      "tshirt_size": "M",
+      "has_epic": false
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "skill_name": "review-demo-preparation",
+  "queries": [
+    {
+      "id": 1,
+      "query": "prepare a sprint review for the Checkout team based on the completed deliveries and suggest the presenters",
+      "should_trigger": true,
+      "expected_skill": "review-demo-preparation",
+      "note": "triggers in a sprint review context"
+    },
+    {
+      "id": 2,
+      "query": "put together a product demo from what was delivered this week for stakeholders",
+      "should_trigger": true,
+      "expected_skill": "review-demo-preparation",
+      "note": "triggers in a product demo context"
+    },
+    {
+      "id": 3,
+      "query": "organize a product review focused on business value and on who presents each block",
+      "should_trigger": true,
+      "expected_skill": "review-demo-preparation",
+      "note": "triggers in a product review context"
+    },
+    {
+      "id": 4,
+      "query": "which deliveries completed in Jira should we present tomorrow to the business?",
+      "should_trigger": true,
+      "expected_skill": "review-demo-preparation",
+      "note": "triggers when the request is to prepare a presentation session"
+    },
+    {
+      "id": 5,
+      "query": "prepare the team retro and the sprint improvement actions",
+      "should_trigger": false,
+      "expected_skill": "retro-preparation",
+      "note": "should not trigger here; it is a retrospective context"
+    }
+  ]
+}

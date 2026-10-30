@@ -1,0 +1,87 @@
+{
+  "skill_name": "planning-preparation",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Prepare the planning. The next sprint is atypical, focus will be lower.",
+      "expected_output": "Reduced commitment range compared to normal, with the adjustment explained.",
+      "files": [
+        "evals/files/planning_focus_atipico.json"
+      ],
+      "expectations": [
+        "The recommended range is visibly below the average velocity (not 19-21 pts)",
+        "The output explains that the adjustment comes from the focus relative to the baseline",
+        "Effective person-days appear as a diagnostic, not as the origin of the range"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Propose the candidate scope in priority order.",
+      "expected_output": "Scope that respects rank and puts the rest in the queue.",
+      "files": [
+        "evals/files/planning_focus_atipico.json"
+      ],
+      "expectations": [
+        "The candidate scope does not include a lower-ranked story by skipping a higher-ranked one that does not fit",
+        "Stories that do not make it in appear as next in queue, in rank order",
+        "The output presents the scope as a candidate, for the team to decide"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "New team, first sprint. How much can we commit to?",
+      "expected_output": "No invented points range; asks about recent delivery.",
+      "files": [
+        "evals/files/planning_sem_velocity.json"
+      ],
+      "expectations": [
+        "Does NOT propose a points range",
+        "Returns the effective person-days and explains why it does not convert days into points",
+        "Asks the team what it delivered in the last sprints",
+        "The unestimated story is listed separately and does not enter the scope"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Prepare the planning: we permanently lost a person since the velocity sprints.",
+      "expected_output": "Range adjusted for headcount, with a note.",
+      "files": [
+        "evals/files/planning_headcount_reduzido.json"
+      ],
+      "expectations": [
+        "The range is adjusted downward for the headcount change",
+        "A note indicates the headcount change versus the velocity sprints",
+        "The range method (observed min-max x availability) is made explicit"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "The team thinks this sprint will have very high focus, 0.95. How much can we commit to?",
+      "expected_output": "Range capped at the best recorded delivery, with a warning that extrapolation would exceed the history.",
+      "files": [
+        "evals/files/planning_focus_optimista.json"
+      ],
+      "expectations": [
+        "The upper bound of the range does not exceed the best recorded delivery (25 pts)",
+        "The output explicitly warns that the availability adjustment pointed to a value above the history",
+        "The warning appears in a highlighted warnings block, not as a neutral note",
+        "The output flags that the focus factor 0.95 is outside the typical range 0.5–0.9",
+        "The candidate scope is not filled to a value above the historical maximum"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Prepare the planning for S46.",
+      "expected_output": "Warning that there are no ready stories, instead of an empty candidate scope presented as normal.",
+      "files": [
+        "evals/files/planning_zero.json"
+      ],
+      "expectations": [
+        "The output warns that there are no ready stories in the input",
+        "Does not present an empty candidate scope as if it were a valid proposal",
+        "Instructs to confirm the board and the top-of-backlog JQL",
+        "The warning is propagated to the delivered pack"
+      ]
+    }
+  ]
+}

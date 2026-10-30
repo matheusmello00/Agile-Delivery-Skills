@@ -1,0 +1,31 @@
+{
+  "team": "T",
+  "sprint_name": "S43",
+  "people": 5,
+  "sprint_days": 10,
+  "absences_person_days": 0,
+  "focus_factor": 0.4,
+  "baseline_focus": 0.7,
+  "prior_velocities": [
+    21,
+    21,
+    21
+  ],
+  "ready_stories": [
+    {
+      "key": "R-1",
+      "title": "Rank 1 (large)",
+      "points": 13
+    },
+    {
+      "key": "R-2",
+      "title": "Rank 2 (large)",
+      "points": 13
+    },
+    {
+      "key": "R-3",
+      "title": "Rank 3 (small)",
+      "points": 5
+    }
+  ]
+}

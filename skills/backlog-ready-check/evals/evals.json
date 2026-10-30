@@ -1,0 +1,86 @@
+{
+  "skill_name": "backlog-ready-check",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Run the readiness scan on these stories.",
+      "expected_output": "Summary with buckets that add up to the total.",
+      "files": [
+        "evals/files/backlog_buckets.json"
+      ],
+      "expectations": [
+        "Ready + to refine + to split equals the total (4)",
+        "No story appears in two buckets",
+        "The large story with no AC appears in To refine, with the size as a note"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Are these stories ready to enter a sprint?",
+      "expected_output": "The story with no epic is not reported as ready.",
+      "files": [
+        "evals/files/backlog_buckets.json"
+      ],
+      "expectations": [
+        "The story with no epic does NOT appear in Ready",
+        "The missing epic is presented as a gap",
+        "The output states that the epic is required in the configuration used"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Our Kanban team does not use epics or estimates, but requires identified dependencies and testability.",
+      "expected_output": "Scan with the team's DoR, without penalising the absence of an epic or an estimate.",
+      "files": [
+        "evals/files/backlog_dor_custom.json"
+      ],
+      "expectations": [
+        "The absence of an epic is not treated as a gap",
+        "Stories without identified dependencies or that are not testable appear as gaps",
+        "The lack of an estimate is NOT treated as a gap",
+        "The Notes record the DoR criteria used and that estimation is optional in Kanban"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Check readiness and tell me whether the story descriptions have substance.",
+      "expected_output": "Clear distinction between the model's judgment and the script's aggregation.",
+      "files": [
+        "evals/files/backlog_buckets.json"
+      ],
+      "expectations": [
+        "The output makes explicit that the substance assessment is the model's",
+        "Does not attribute to the script the judgment of description or AC quality",
+        "Records the judgment criteria used"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Run the readiness scan on the top of the NAC backlog.",
+      "expected_output": "Empty-backlog warning instead of a normal-looking report of zero stories.",
+      "files": [
+        "evals/files/backlog_zero.json"
+      ],
+      "expectations": [
+        "The report includes a prominent warning that zero stories came back",
+        "Does not conclude that the backlog is refined or healthy",
+        "Instructs to confirm the board and the JQL",
+        "The warning is carried over into the delivered shortlist"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Run the readiness scan on the top of the Kanban flow — the team does not use estimates.",
+      "expected_output": "Items with description and AC are ready even without a size; split only when a size is above the ceiling.",
+      "files": [
+        "evals/files/backlog_kanban_no_estimate.json"
+      ],
+      "expectations": [
+        "The story with no size but with description and AC appears in Ready",
+        "The absence of estimate/size is NOT a gap",
+        "The output states estimate/size required: no",
+        "The complete XL story appears in split candidates, not in To refine"
+      ]
+    }
+  ]
+}
