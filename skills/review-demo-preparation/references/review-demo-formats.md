@@ -47,11 +47,6 @@ These enter the main narrative:
 - other equivalent types, when completed and deliverable
 
 These do not enter as a main delivery:
-- Test
-- Test Plan
-- Test Execution
-- Test Set
-- Xray Test
 - management, support or quality items with no evidenced business/functional/operational value
 
 ### Step 2 — Group by perceived value

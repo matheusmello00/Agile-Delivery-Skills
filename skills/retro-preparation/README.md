@@ -8,6 +8,8 @@ Facts-based retrospective facilitation pack: sprint/period or flow metrics, two 
 ## Requirements
 A tracker connector (MCP) with read access: Atlassian (Jira), Azure DevOps or ClickUp (mapping in `references/trackers.md`). No script of its own — it uses the board/sprint data feed and, in Kanban, the tracker's flow context. Python 3.9+ only for the local normalizer, if one exists.
 
+> **Azure DevOps and ClickUp:** to work well outside Jira, add your tool's own fields to the lookup — work item types and states, estimate field, blocked marker, sprint/iteration and acceptance criteria — or tell the skill their names. Without them the search can miss items or misread their status. Mapping in `references/trackers.md`.
+
 ## Inherited metrics contract
 The factual context block always uses the same minimum set, mapped to the keys of the chosen contract's JSON output, so retros of the same team are comparable. In Scrum the minimum set is `commitment_reliability_pct_count`, `carryover`, `scope_change_pct`, `velocity` vs `prior_velocity_avg`, `flagged.issues`. In Kanban the minimum set becomes `lead_time_avg`, `cycle_time_avg`, `throughput`, `wip_by_column`, `blocked_items` and `waiting_time` / `wait_age`.
 

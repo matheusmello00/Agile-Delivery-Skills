@@ -91,11 +91,6 @@ The factual block must be consistent and comparable between sessions. The skill 
    - Bug
    - other equivalent types, when finished and deliverable
 3. **Exclude non-deliverable items**. They do not count toward the count, the narrative or the deliveries table:
-   - Test
-   - Test Plan
-   - Test Execution
-   - Test Set
-   - Xray Test
    - any management, quality or support items that do not represent a business/functional/operational delivery
 4. **If there is quality/coverage evidence** and it is useful, it may be mentioned for transparency, but without mixing it with the main delivery narrative.
 5. **Never use the "done" status without confirming the board logic**. If there is a risk of ambiguity, ask before interpreting.

@@ -19,6 +19,8 @@ The skill must turn completed deliveries into:
 - Identification of the target audience and the session goal.
 - Definition of the analysis type: Scrum/sprint or Kanban/time window.
 
+> **Azure DevOps and ClickUp:** to work well outside Jira, add your tool's own fields to the lookup — work item types and states, estimate field, blocked marker, sprint/iteration and acceptance criteria — or tell the skill their names. Without them the search can miss items or misread their status. Mapping in `references/trackers.md`.
+
 ## Language
 Default to English. Always reply in the language the user writes in or explicitly requests (any language, e.g. Portuguese, Spanish). Only the output language changes, not the logic. Verbatim items (issue keys, names, field values) are kept untouched.
 
@@ -42,11 +44,6 @@ These enter the main narrative:
 - other equivalent types, when completed and deliverable
 
 These do not enter as a main delivery:
-- Test
-- Test Plan
-- Test Execution
-- Test Set
-- Xray Test
 - management or support items with no clear business, operational or user value
 
 ### 3) Group by perceived value

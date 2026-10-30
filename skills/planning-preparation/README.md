@@ -8,6 +8,8 @@ Crosses the ready stories at the top of the backlog with the team's real capacit
 ## Requirements
 A tracker connector (MCP) with read access: Atlassian (Jira), Azure DevOps or ClickUp (mapping in `references/trackers.md`). Python 3.9+.
 
+> **Azure DevOps and ClickUp:** to work well outside Jira, add your tool's own fields to the lookup — work item types and states, estimate field, blocked marker, sprint/iteration and acceptance criteria — or tell the skill their names. Without them the search can miss items or misread their status. Mapping in `references/trackers.md`.
+
 ## Script
 ```bash
 python scripts/capacity.py planning.json [--json]

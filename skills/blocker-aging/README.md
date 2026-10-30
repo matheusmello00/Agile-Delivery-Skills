@@ -8,6 +8,8 @@ Active impediments of a team and how many business days they have been stuck, wi
 ## Requirements
 A tracker connector (MCP) with read access: Atlassian (Jira), Azure DevOps or ClickUp (mapping in `references/trackers.md`). Python 3.9+.
 
+> **Azure DevOps and ClickUp:** to work well outside Jira, add your tool's own fields to the lookup — work item types and states, estimate field, blocked marker, sprint/iteration and acceptance criteria — or tell the skill their names. Without them the search can miss items or misread their status. Mapping in `references/trackers.md`.
+
 ## Blocking process
 The blocking-marking mechanism (`Flagged`, status, label or custom field) is resolved at runtime. If the team uses `Flagged` with a reason field, `Flagged` without a reason is reported as a governance inconsistency. The skill measures blocking time and escalates risk; it does not replace process governance.
 

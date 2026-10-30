@@ -8,6 +8,8 @@ Definition of Ready / flow entry scan of the top of the backlog or the entry que
 ## Requirements
 A tracker connector (MCP) with read access: Atlassian (Jira), Azure DevOps or ClickUp (mapping in `references/trackers.md`). Python 3.9+.
 
+> **Azure DevOps and ClickUp:** to work well outside Jira, add your tool's own fields to the lookup — work item types and states, estimate field, blocked marker, sprint/iteration and acceptance criteria — or tell the skill their names. Without them the search can miss items or misread their status. Mapping in `references/trackers.md`.
+
 ## Script
 ```bash
 python scripts/check_readiness.py backlog.json [--json]

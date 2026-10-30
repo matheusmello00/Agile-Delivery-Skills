@@ -32,6 +32,8 @@ The assistant reads what you provide, asks up to four questions for missing cont
 
 Jira (Atlassian), Azure DevOps and ClickUp, through the tracker connector (MCP) your assistant already has. Each skill ships a `references/trackers.md` with the query and field mapping. Replies come in the language you write in. Bundled scripts use Python 3.9+ with the standard library only.
 
+> **Azure DevOps and ClickUp:** to work well outside Jira, add your tool's own fields to the lookup (work item types and states, estimate field, blocked marker, sprint/iteration, acceptance criteria) or tell the skill their names. Without them the search can miss items.
+
 ## 📦 Install
 
 ### Claude Code plugin

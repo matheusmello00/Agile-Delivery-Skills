@@ -12,7 +12,7 @@
         "Groups deliveries by perceived value and not just as a list of issues",
         "Suggests presenters based on the assignees and their real contribution",
         "Focuses on the impact for the business, the user or the operation",
-        "Excludes non-deliverable items, such as Test, Test Set or Pre-Condition"
+        "Excludes non-deliverable items, such as test or quality artifacts"
       ]
     },
     {

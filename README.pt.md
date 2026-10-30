@@ -32,6 +32,8 @@ O assistente lê o que você fornece, faz até quatro perguntas se faltar contex
 
 Jira (Atlassian), Azure DevOps e ClickUp, pelo conector de tracker (MCP) que o seu assistente já tem. Cada skill traz um `references/trackers.md` com o mapeamento de consultas e campos. As respostas vêm no idioma em que você escrever. Os scripts incluídos usam Python 3.9+ apenas com a biblioteca padrão.
 
+> **Azure DevOps e ClickUp:** para funcionar bem fora do Jira, adicione os campos da própria ferramenta à busca (tipos e estados dos itens, campo de estimativa, marcador de bloqueio, sprint/iteração, critérios de aceite) ou informe os nomes à skill. Sem eles a busca pode perder itens.
+
 ## 📦 Instalação
 
 ### Plugin do Claude Code
