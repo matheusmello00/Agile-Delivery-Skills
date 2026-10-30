@@ -4,7 +4,7 @@
 
 <img src="assets/banner.svg" alt="Agile Delivery Skills — Matheus Mello" width="100%">
 
-*Five agile delivery skills that turn your board data into a ready-to-use briefing: backlog readiness, blockers, planning, retros and reviews.*
+*Five agile delivery skills for Scrum and Kanban teams that turn your board data into a ready-to-use briefing: backlog readiness, blockers, planning, retros and reviews.*
 
 <a href="https://www.linkedin.com/in/matheusmello00/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 <a href="mailto:m.mello00@outlook.com"><img src="https://img.shields.io/badge/Email-Say%20hello-6D1A36?style=for-the-badge&logo=microsoftoutlook&logoColor=white" alt="Email"></a>
@@ -16,15 +16,17 @@
 
 ---
 
-## 🧭 Start with the work in front of you
+## 🧭 Start with the work in your hands
 
-| Bring this | Use this | Ask for this |
-|---|---|---|
-| The top of your backlog | `backlog-ready-check` | Check whether the top 20 items are ready for the next sprint against our Definition of Ready. |
-| A board with blocked items | `blocker-aging` | Show what is blocked, for how many business days, and what to escalate. |
-| The next sprint and team capacity | `planning-preparation` | Cross capacity with velocity, propose the candidate scope and draft a sprint goal. |
-| An upcoming retrospective | `retro-preparation` | Prepare a facts-based retro: metrics, two or three candidate themes and a suitable format. |
-| A finished sprint | `review-demo-preparation` | Build the review/demo briefing grouped by value, with a narrative and presenters. |
+| Stage | Bring this | Use this | Ask for this |
+|---|---|---|---|
+| **Scrum:** refinement, in the days before planning, when the top must be ready to enter the sprint.<br>**Kanban:** queue replenishment, before pulling items into the flow. | The top of your backlog | `backlog-ready-check` | Check whether the top 20 items are ready for the next sprint against our Definition of Ready. |
+| **Scrum:** sprint execution, at the daily and at checkpoints, whenever items are stalled.<br>**Kanban:** board review, to see the impact of blockers on WIP and the queue. | A board with blocked items | `blocker-aging` | Show what is blocked, for how many business days, and what to escalate. |
+| **Scrum:** pre-planning, before Sprint Planning, to arrive with a proposed scope and goal.<br>**Kanban:** not applicable (no sprint, no scope commitment). | The next sprint and team capacity | `planning-preparation` | Cross capacity with velocity, propose the candidate scope and draft a sprint goal. |
+| **Scrum:** pre-retrospective, when closing the sprint, before gathering the team.<br>**Kanban:** periodic retro over a flow window (lead time, throughput, WIP). | An upcoming retrospective | `retro-preparation` | Prepare a facts-based retro: metrics, two or three candidate themes and a suitable format. |
+| **Scrum:** pre-review/demo, at the end of the sprint, before presenting to stakeholders.<br>**Kanban:** end of a time window (week, month), before the delivery demo. | A finished sprint | `review-demo-preparation` | Build the review/demo briefing grouped by value, with a narrative and presenters. |
+
+> **Scrum or Kanban:** the skills work with both models and ask which one you use when the context is unclear. The exception is `planning-preparation`, which relies on sprints, capacity and velocity, so it is Scrum-only. In Kanban, estimates are optional by default.
 
 The assistant reads what you provide, asks up to four questions for missing context, and works toward the deliverable. Give it your board or project, sprint, team, goal and constraints when you can. The skills are read-only by default: they report, they never change your tracker.
 

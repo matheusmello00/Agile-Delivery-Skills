@@ -4,7 +4,7 @@
 
 <img src="assets/banner.svg" alt="Agile Delivery Skills — Matheus Mello" width="100%">
 
-*Cinco skills de agile delivery que convierten los datos de tu tablero en un briefing listo para usar: preparación del backlog, bloqueos, planificación, retros y reviews.*
+*Cinco skills de agile delivery para equipos Scrum y Kanban que convierten los datos de tu tablero en un briefing listo para usar: preparación del backlog, bloqueos, planificación, retros y reviews.*
 
 <a href="https://www.linkedin.com/in/matheusmello00/"><img src="https://img.shields.io/badge/LinkedIn-Conectar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 <a href="mailto:m.mello00@outlook.com"><img src="https://img.shields.io/badge/Email-Escr%C3%ADbeme-6D1A36?style=for-the-badge&logo=microsoftoutlook&logoColor=white" alt="Email"></a>
@@ -16,15 +16,17 @@
 
 ---
 
-## 🧭 Empieza por el trabajo que tienes delante
+## 🧭 Empieza por el trabajo que tienes entre manos
 
-| Trae esto | Usa esta skill | Pide esto |
-|---|---|---|
-| El tope de tu backlog | `backlog-ready-check` | Verifica si los 20 primeros ítems están listos para el próximo sprint según nuestra Definition of Ready. |
-| Un tablero con ítems bloqueados | `blocker-aging` | Muestra qué está bloqueado, durante cuántos días hábiles y qué escalar. |
-| El próximo sprint y la capacidad del equipo | `planning-preparation` | Cruza capacidad con velocity, propone el alcance candidato y redacta un borrador de sprint goal. |
-| Una retrospectiva próxima | `retro-preparation` | Prepara una retro basada en hechos: métricas, dos o tres temas candidatos y un formato adecuado. |
-| Un sprint terminado | `review-demo-preparation` | Arma el briefing de review/demo agrupado por valor, con narrativa y presentadores. |
+| Etapa | Trae esto | Usa esta skill | Pide esto |
+|---|---|---|---|
+| **Scrum:** refinamiento, en los días previos al planning, cuando el tope debe estar listo para entrar al sprint.<br>**Kanban:** reposición de la cola, antes de tirar ítems al flujo. | El tope de tu backlog | `backlog-ready-check` | Verifica si los 20 primeros ítems están listos para el próximo sprint según nuestra Definition of Ready. |
+| **Scrum:** ejecución del sprint, en la daily y en checkpoints, siempre que haya ítems detenidos.<br>**Kanban:** revisión del tablero, para ver el impacto de los bloqueos en el WIP y la cola. | Un tablero con ítems bloqueados | `blocker-aging` | Muestra qué está bloqueado, durante cuántos días hábiles y qué escalar. |
+| **Scrum:** pre-planning, antes del Sprint Planning, para llegar con alcance y meta propuestos.<br>**Kanban:** no aplica (sin sprint ni compromiso de alcance). | El próximo sprint y la capacidad del equipo | `planning-preparation` | Cruza capacidad con velocity, propone el alcance candidato y redacta un borrador de sprint goal. |
+| **Scrum:** pre-retrospectiva, al cerrar el sprint, antes de reunir al equipo.<br>**Kanban:** retro periódica, sobre una ventana de flujo (lead time, throughput, WIP). | Una retrospectiva próxima | `retro-preparation` | Prepara una retro basada en hechos: métricas, dos o tres temas candidatos y un formato adecuado. |
+| **Scrum:** pre-review/demo, al final del sprint, antes de presentar a los stakeholders.<br>**Kanban:** fin de una ventana de tiempo (semana, mes), antes de la demo de entregas. | Un sprint terminado | `review-demo-preparation` | Arma el briefing de review/demo agrupado por valor, con narrativa y presentadores. |
+
+> **Scrum o Kanban:** las skills funcionan con ambos modelos y preguntan cuál usas cuando el contexto no lo aclara. La excepción es `planning-preparation`, que depende de sprints, capacidad y velocity, por lo que es solo para Scrum. En Kanban, las estimaciones son opcionales por defecto.
 
 El asistente lee lo que le proporcionas, hace hasta cuatro preguntas si falta contexto y trabaja hacia el entregable. Indícale tablero o proyecto, sprint, equipo, objetivo y restricciones cuando puedas. Las skills son de solo lectura por defecto: informan, nunca modifican tu tracker.
 
