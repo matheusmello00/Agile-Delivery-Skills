@@ -30,6 +30,19 @@
 
 El asistente lee lo que le proporcionas, hace hasta cuatro preguntas si falta contexto y trabaja hacia el entregable. Indícale tablero o proyecto, sprint, equipo, objetivo y restricciones cuando puedas. Las skills son de solo lectura por defecto: informan, nunca modifican tu tracker.
 
+## 🧱 Cómo se construye cada skill (estándar Agent Skills)
+
+Todas las skills siguen la [especificación abierta Agent Skills](https://agentskills.io/specification), por lo que funcionan en cualquier asistente compatible.
+
+```
+nombre-de-la-skill/
+├── SKILL.md          # Obligatorio: frontmatter + instrucciones (menos de 500 líneas)
+├── references/       # Opcional: detalle cargado solo cuando hace falta, un nivel de profundidad
+├── scripts/          # Opcional: código autocontenido, con --help y errores claros
+├── assets/           # Opcional: plantillas y recursos estáticos
+└── evals/            # Extensión nuestra: queries de descubrimiento y escenarios de calidad
+```
+
 ## 🔌 Funciona con
 
 Jira (Atlassian), Azure DevOps y ClickUp, mediante el conector de tracker (MCP) que tu asistente ya tiene. Cada skill incluye un `references/trackers.md` con el mapeo de consultas y campos. Responde en el idioma en que escribas. Los scripts incluidos usan Python 3.9+ con solo la biblioteca estándar.
@@ -91,4 +104,4 @@ Abre el `SKILL.md` correspondiente y entrégaselo junto con tu trabajo. Incluye 
 
 ## 👤 Autor
 
-Creado por [Matheus Mello](https://github.com/matheusmello00) 
+Creado por [Matheus Mello](https://github.com/matheusmello00) — Senior Product Manager & Agile Coach.

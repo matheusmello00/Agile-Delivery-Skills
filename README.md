@@ -30,6 +30,19 @@
 
 The assistant reads what you provide, asks up to four questions for missing context, and works toward the deliverable. Give it your board or project, sprint, team, goal and constraints when you can. The skills are read-only by default: they report, they never change your tracker.
 
+## 🧱 How each skill is built (Agent Skills standard)
+
+All skills follow the open [Agent Skills specification](https://agentskills.io/specification), so they work in any compatible assistant.
+
+```
+skill-name/
+├── SKILL.md          # Required: frontmatter + instructions (under 500 lines)
+├── references/       # Optional: detail loaded only when needed, one level deep
+├── scripts/          # Optional: self-contained code, with --help and clear errors
+├── assets/           # Optional: templates and static resources
+└── evals/            # Our extension: discovery queries and quality scenarios
+```
+
 ## 🔌 Works with
 
 Jira (Atlassian), Azure DevOps and ClickUp, through the tracker connector (MCP) your assistant already has. Each skill ships a `references/trackers.md` with the query and field mapping. Replies come in the language you write in. Bundled scripts use Python 3.9+ with the standard library only.
@@ -91,4 +104,4 @@ Open the relevant `SKILL.md` and provide it with your work. Include that skill's
 
 ## 👤 Author
 
-Built by [Matheus Mello](https://github.com/matheusmello00) 
+Built by [Matheus Mello](https://github.com/matheusmello00) — Senior Product Manager & Agile Coach.
